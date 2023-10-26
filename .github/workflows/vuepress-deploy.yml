@@ -10,7 +10,7 @@ jobs:
     - name: vuepress-deploy
       uses: jenkey2011/vuepress-deploy@master
       env:
-        ACCESS_TOKEN: ${{ secrets.SUMMARY_CARDS_TOKEN }}
+        ACCESS_TOKEN: ${{ secrets.e-lab }}
         TARGET_REPO: etuloser/etuloser.github.io
         TARGET_BRANCH: main
         BUILD_SCRIPT: yarn && yarn docs:build
